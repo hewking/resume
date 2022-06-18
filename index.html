@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>前端简历</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
-.mac-os-11 { --title-bar-height:28px; }
+<title>前端简历</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -27,7 +27,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font: inherit; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
@@ -54,8 +54,8 @@ tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror-linenumber { user-select: none; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -65,7 +65,7 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping pre { white-space: pre; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
 .md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
@@ -74,7 +74,7 @@ div.hr:focus { cursor: none; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -87,14 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
 #write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
@@ -131,28 +131,28 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
-code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
 .html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
 .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
 .MathJax_SVG * { transition: none 0s ease 0s; }
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom: 0px; }
+table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 @media print {
@@ -161,7 +161,7 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 .md-diagram-panel .messageText { stroke: none !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
+.md-require-zoom-fix foreignObject { font-size: var(--mermaid-font-zoom); }
 
 
 :root {
@@ -544,10 +544,10 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
-
+ :root {--mermaid-font-zoom:1em ;} 
 </style>
 </head>
-<body class='typora-export os-windows'>
-<div id='write'  class=''><h1><a name="程剑豪简历" class="md-header-anchor"></a><span>程剑豪简历</span></h1><h2><a name="介绍" class="md-header-anchor"></a><span>介绍</span></h2><figure><table><thead><tr><th><span>姓名</span></th><th><span>程剑豪</span></th></tr></thead><tbody><tr><td><span>Phone</span></td><td><span>132 6555 4661</span></td></tr><tr><td><span>Email</span></td><td><a href='mailto:cjhcoder@qq.com' target='_blank' class='url'>cjhcoder@qq.com</a></td></tr><tr><td><span>GitHub</span></td><td><a href='http://www.github.com/hewking' target='_blank' class='url'>www.github.com/hewking</a></td></tr><tr><td><span>工作年限</span></td><td><span>7年</span></td></tr><tr><td><span>所在城市</span></td><td><span>深圳</span></td></tr></tbody></table></figure><h2><a name="工作经历" class="md-header-anchor"></a><span>工作经历</span></h2><h3><a name="深圳丰巢科技" class="md-header-anchor"></a><span>深圳丰巢科技</span></h3><p><span>2020.6 - 至今 高级研发工程师</span></p><p><span>主要负责移动端基础组件的开发，性能监控，基础工具库，应用重构优化保障应用技术栈更新等。</span></p><ul><li><span>负责建设Android 端埋点工具bee，实现无痕埋点，接入公司多款App，配合建设公司数据平台。开发截图上报工具，实现自动标记埋点，提高埋点效率。</span></li><li><span>开发基础工具库，koscrew 集成了常用的kotlin 相关工具类包括一些拓展方法，SpannableString 拓展类，动画，coroutine 工具类等。</span></li><li><span>开发性能监控工具 radar-apm, 实现应用启动耗时，慢方法，网络监控等。并搭建了一套统一的gradle插件开发平台，能够简洁易用的方式编写gradle 插件，屏蔽了底层的操作细节，提高开发效率。</span></li><li><span>重构丰巢App 首页和收寄件模块使用kotlin 重新编写，减少三分之一代码量，使用viewModel 和livedata 采用MVVM 架构模式，提升开发效率和业务稳定性。</span></li><li><span>支持应用统一与h5的交互，支持丰巢商城的开发</span></li></ul><h3><a name="深圳来星网络科技" class="md-header-anchor"></a><span>深圳来星网络科技</span></h3><p><span>2018.7 — 2020.6 高级Android开发工程师</span></p><p><span>负责GuildChat的开发，专注于应用架构设计和核心模块IM的开发以及比特币钱包，同时实现基础组件的开发，成功保证App高性能，高可用，稳定运行。在GuildChat2.0采用React Native重新开发。同团队成员一起对RN的调研和实践并转换到JavaScript技术栈，完成新版本的开发，同时处理遇到的各种平台差异性问题和性能优化。</span></p><h4><a name="guildchat" class="md-header-anchor"></a><span>GuildChat</span></h4><p><span> GuildChat核心功能包括IM，浏览器和数字货币钱包。基于IM的实现，通过聊天，转账，发红包等业务场景,还有浏览器使用Dapp对钱包形成闭环。ETH,TRON,BTC均得到完整功能支持。</span></p><ul><li><span>参与产品需求设计，完成核心功能IM和钱包相关开发</span></li><li><span>GuildChat 1.0 Android版项目重构和应用架构设计</span></li><li><span>GuildChat 2.0 RN版本基础组件建设和性能优化</span></li><li><span>技术选型和预研以及技术难点的攻关</span></li><li><span>RN与原生的交互，和原生支持库开发</span></li><li><span>代码Review</span></li><li><span>组织和参与团队成员技术分享</span></li><li><span>执行Gitflow 工作流</span></li><li><span>构建Jenkins自动化打包测试发布</span></li><li><span>确保App稳定运行，跟测试团队配合定位问题，及时修复</span></li></ul><h3><a name="深圳红鸟网络科技" class="md-header-anchor"></a><span>深圳红鸟网络科技</span></h3><p><span>2017/2—2018.2 Android 开发工程师</span></p><p><span>负责恐龙谷的开发。实现核心模块IM的开发，封装基础组件。基于基础框架的完善快速完成新业务，在项目迭代过程中实现短视频等新业务，保证项目线上稳定运行。</span></p><h4><a name="恐龙谷" class="md-header-anchor"></a><span>恐龙谷</span></h4><p><span> 恐龙谷是一款社交类产品。核心功能包括IM和朋友圈，短视频等，在此基础上做了各种业务的尝试包括答题，技能出租，红包广场等。</span></p><ul><li><span>完成IM，技能出租，商品推广，活动等业务开发。</span></li><li><span>多种消息类型做了多类型适配，可通过配置生成不同类型的消息展示。</span></li><li><span>应用性能监控，崩溃统计等</span></li><li><span>图片库，网络库，日志等常用组件的封装</span></li></ul><h3><a name="深圳多新哆技术公司" class="md-header-anchor"></a><span>深圳多新哆技术公司</span></h3><p><span>2015/7—2017.1 Android 开发工程师</span></p><p><span>负责多哚VR的开发。负责视频和游戏的下载管理，以及VR视频播放器的开发。与其它团队合作完成与VR盒子的交互，使其拥有良好的用户体验。</span></p><h4><a name="多哚vr" class="md-header-anchor"></a><span>多哚VR</span></h4><p><span> 多哚VR 提供VR视频和游戏下载和播放，也通过Unity体验VR全景场景。通过连接公司硬件产品VR盒子，进入Unity场景体验VR。</span></p><ul><li><span>视频和游戏的下载管理和内容展示。</span></li><li><span>VR视频的播放和管理以及DLNA投屏。</span></li><li><span>与Unity VR的交互以及VR盒子的交互等开发工作。</span></li></ul><h2><a name="专业技能" class="md-header-anchor"></a><span>专业技能</span></h2><ul><li><span>熟悉Java,Kotlin,JavaScript,TypeScript等编程语言</span></li><li><span>熟悉常用算法和数据结构</span></li><li><span>熟悉Fultter 应用开发</span></li><li><span>熟悉Android 应用架构设计，Android 高性能编程及调优</span></li><li><span>熟悉Android 性能监控，构建工具Gradle及插件开发</span></li><li><span>熟悉React 及其技术栈，react-router, redux,rematch等</span></li><li><span>熟悉函数式编程</span></li><li><span>熟悉响应式编程RxJava</span></li><li><span>熟悉Android自定义View</span></li><li><span>深入了解 Okhttp、React Native 等开源库原理</span></li><li><span>熟悉插件化，热修复原理</span></li><li><span>熟悉Gitflow工作流</span></li></ul><h2><a name="教育经历" class="md-header-anchor"></a><span>教育经历</span></h2><ul><li><span>2012.10—2015.6  天津大学(CET-4)     本科  计算机信息管理</span></li></ul></div>
+<body class='typora-export'>
+<div id='write'  class=''><h1><a name="程剑豪简历" class="md-header-anchor"></a><span>程剑豪简历</span></h1><h2><a name="个人信息" class="md-header-anchor"></a><span>个人信息</span></h2><ul><li><span>程剑豪</span></li><li><span>Phone : 132 6555 4661</span></li><li><span>Email : </span><a href='mailto:cjhcoder@qq.com' target='_blank' class='url'>cjhcoder@qq.com</a></li><li><span>GitHub : </span><a href='http://www.github.com/hewking' target='_blank' class='url'>www.github.com/hewking</a></li><li><span>工作年限 : 7年</span></li></ul><h2><a name="个人优势" class="md-header-anchor"></a><span>个人优势</span></h2><p>&nbsp;</p><h2><a name="工作经历" class="md-header-anchor"></a><span>工作经历</span></h2><h3><a name="深圳丰巢科技" class="md-header-anchor"></a><span>深圳丰巢科技</span></h3><p><span>2020.6 - 至今 高级研发工程师</span></p><p><span>主要负责移动端基础组件的开发，性能监控，基础工具库，应用重构优化保障应用技术栈更新等。</span></p><ul><li><span>负责建设Android 端埋点工具</span><code>bee</code><span>，实现无痕埋点，接入公司多款App，配合建设公司数据平台。开发截图上报工具，实现自动标记埋点，提高埋点效率。项目接入之后不断维护需求进行bee的迭代开发，与业务线开发进行对接指导，成功使公司埋点平台</span><code>黄金眼</code><span>进行有效的数据分析，辅助业务方和产品进行业务决策。</span></li><li><span>开发基础工具库，</span><code>koscrew</code><span> 集成了常用的kotlin 相关工具类包括一些拓展方法，SpannableString 拓展类，动画，coroutine 工具类等，完善文档和技术分享，接入各App 之后有效提升开发效率，通过使用工具库实现同类功能有效提升效率50% 以上，并且稳定性可维护性优势明显。</span></li><li><span>开发性能监控工具 </span><code>radar-apm</code><span>, 实现应用启动耗时，慢方法，网络监控，包体积优化，png图片压缩等。并搭建了一套统一的gradle插件开发平台，能够简洁易用的方式编写gradle 插件，屏蔽了底层的操作细节，提高插件开发效率。对各个监控模块进行拆分到不同module中，方便分模块接入并且统一实现了存储和上报模块。</span></li><li><span>使用kotlin 重构丰巢App 主要在基础架构和首页寄件等主要业务，减少三分之一代码量，使用ViewModel 和LiveData, Paging3 等</span><em><span>AAC</span></em><span>组件采用MVVM 架构模式，提升开发效率和业务稳定性。</span></li><li><span>维护和开发丰巢管家和丰巢App及其他业务线产品新业务，例如别墅柜，信报柜等业务开发</span></li><li><span>支持应用统一与h5的交互，支持丰巢商城的开发</span></li></ul><h3><a name="深圳来星网络科技" class="md-header-anchor"></a><span>深圳来星网络科技</span></h3><p><span>2018.7 — 2020.6 高级移动端开发工程师</span></p><p><span>负责GuildChat的开发，专注于应用架构设计和核心模块IM的开发以及比特币钱包，同时实现基础组件的开发，保证App高性能，高可用。在GuildChat2.0采用</span><em><span>React Native</span></em><span>重新开发。同团队成员一起对RN的调研和实践并转换到JavaScript技术栈，完成新版本的开发，同时处理遇到的各种平台差异性问题和性能优化。在完成移动端核心功能后，后续开发了桌面版，使用Electron结合</span><em><span>next.js</span></em><span>进行开发，采用</span><em><span>ant-design</span></em><span> 作为基础组件，并在此基础之上封装基于项目规范的基础组件。在桌面版本开发的同时，团队决定舍弃网易云信而自研IM 服务，并在桌面端和移动端统一进行迁移，客户端实现IM sdk， 在sdk 的开发中设计应用架构完成了消息收发API和存储高效的支持了移动端和桌面端IM的开发。</span></p><h4><a name="guildchat" class="md-header-anchor"></a><span>GuildChat</span></h4><p><span> GuildChat核心功能包括IM，浏览器和数字货币钱包。基于IM的实现，通过聊天，转账，发红包等业务场景,还有浏览器使用Dapp对钱包形成闭环。ETH,TRON,BTC及其上的Token均得到完整功能支持, 整个项目通过</span><em><span>lerna</span></em><span> 采用</span><em><span>monorepo</span></em><span>架构的开发模式。</span></p><p><span>技术栈: </span><em><span>react  / rematch / antd / react-native / typescript / Apollo GraphQL/ node/ monorepo</span></em></p><ul><li><span>参与产品需求设计，完成核心功能IM和钱包相关开发</span></li><li><span>GuildChat 1.0 Android版项目重构和应用架构设计</span></li><li><span>GuildChat 2.0 RN版本基础组件建设和性能优化</span></li><li><span>技术选型和预研以及技术难点的攻关</span></li><li><span>RN与原生的交互，和原生支持库开发</span></li><li><span>代码Review,组织和参与团队成员技术分享</span></li><li><span>构建Jenkins自动化打包测试发布</span></li></ul><h4><a name="guildchat-桌面端" class="md-header-anchor"></a><span>GuildChat 桌面端</span></h4><p><span>技术栈: </span><em><span>react  / rematch /antd/ next.js /electron/ typescript / Apollo GraphQL/ sass</span></em></p><ul><li><span>GuildChat 桌面版Electron 的核心功能IM的开发</span></li><li><span>设计和开发自研IM SDK</span></li><li><span>项目技术选型和预研sass 的支持和主题切换等</span></li></ul><h3><a name="深圳红鸟网络科技" class="md-header-anchor"></a><span>深圳红鸟网络科技</span></h3><p><span>2017/2—2018.2 Android 开发工程师</span></p><p><span>负责恐龙谷的开发。实现核心模块IM的开发，封装基础组件。基于基础框架的完善快速完成新业务，在项目迭代过程中实现短视频等新业务，保证项目线上稳定运行。</span></p><h4><a name="恐龙谷" class="md-header-anchor"></a><span>恐龙谷</span></h4><p><span> 恐龙谷是一款社交类产品。核心功能包括IM和朋友圈，短视频等，在此基础上做了各种业务的尝试包括答题，技能出租，红包广场等。</span></p><ul><li><span>完成核心业务IM 的开发包括红包，技能出租，答题等业务。</span></li><li><span>开发基础组件库和自定义View 朋友圈九宫格，各种消息类型，Sticker等 </span></li><li><span>应用性能监控，崩溃统计等</span></li><li><span>图片库，网络库，日志等常用组件的封装</span></li></ul><h3><a name="深圳多新哆技术公司" class="md-header-anchor"></a><span>深圳多新哆技术公司</span></h3><p><span>2015/7—2017.1 Android 开发工程师</span></p><p><span>负责多哚VR的核心开发，包括视频和游戏的下载管理，以及VR视频播放器的开发。与其它VR团队合作完成与VR盒子的交互，使其拥有良好的用户体验。</span></p><h4><a name="多哚vr" class="md-header-anchor"></a><span>多哚VR</span></h4><p><span> 多哚VR 提供VR视频和游戏下载和播放，也通过Unity体验VR全景场景。通过连接公司硬件产品VR盒子，进入Unity场景体验VR。</span></p><ul><li><span>负责App的架构设计和核心模块视频和游戏的下载管理。</span></li><li><span>VR视频播放器以及DLNA投屏。</span></li><li><span>与Unity VR的交互以及VR盒子的交互等开发。</span></li></ul><h2><a name="专业技能" class="md-header-anchor"></a><span>专业技能</span></h2><ul><li><span>熟悉Java,Kotlin,JavaScript,TypeScript,Dart等编程语言</span></li><li><span>熟悉常用算法和数据结构，有良好的计算机基础</span></li><li><span>熟悉React-Native, Flutter 开发，有大型大前端项目的开发经验</span></li><li><span>熟悉React 应用架构设计，React 高性能编程及调优</span></li><li><span>熟悉Android 性能监控，构建工具Gradle及插件开发</span></li><li><span>熟悉React 和底层原理及其生态，react-router, redux,rematch等</span></li><li><span>熟悉前端工程化，熟悉webpack打包工具</span></li><li><span>熟悉Node.js, 有服务端开发经验</span></li></ul><h2><a name="教育经历" class="md-header-anchor"></a><span>教育经历</span></h2><ul><li><span>2012.10—2015.6  天津大学      本科  计算机信息管理</span></li><li><span>2012.9-2015.6  天津电子信息职业技术学院(CET-4)   专科  计算机网络技术</span></li></ul></div>
 </body>
 </html>
